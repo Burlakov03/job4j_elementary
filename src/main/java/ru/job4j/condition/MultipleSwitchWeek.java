@@ -16,11 +16,11 @@ public class MultipleSwitchWeek {
     }
 
     public static void main(String[] args) {
-        System.out.println(MultipleSwitchWeek.numberOfDay("Вторник"));
-        System.out.println(MultipleSwitchWeek.numberOfDay("Wednesday"));
-        System.out.println(MultipleSwitchWeek.numberOfDay("Пятница"));
-        System.out.println(MultipleSwitchWeek.numberOfDay("Sunday"));
-        System.out.println(MultipleSwitchWeek.numberOfDay("Saturday"));
-        System.out.println(MultipleSwitchWeek.numberOfDay("2"));
+        System.out.println(numberOfDay("Вторник"));
+        System.out.println(numberOfDay("Wednesday"));
+        System.out.println(numberOfDay("Пятница"));
+        System.out.println(numberOfDay("Sunday"));
+        System.out.println(numberOfDay("Saturday"));
+        System.out.println(numberOfDay("2"));
     }
 }
