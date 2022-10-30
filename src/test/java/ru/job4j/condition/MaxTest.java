@@ -31,4 +31,13 @@ public class MaxTest {
         int expected = 4;
         assertThat(results).isEqualTo(expected);
     }
+
+    @Test
+    public void whenMax9To4Then9() {
+        int left = 9;
+        int right = 4;
+        int result = Max.max(left, right);
+        int expected = 9;
+        assertThat(result).isEqualTo(expected);
+    }
 }
