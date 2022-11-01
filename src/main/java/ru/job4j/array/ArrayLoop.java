@@ -10,7 +10,7 @@ public class ArrayLoop {
             System.out.print(numbers[i] + " ");
         }
         System.out.println();
-        for (int number: numbers) {
+        for (int number : numbers) {
             System.out.print(number + " ");
         }
     }
