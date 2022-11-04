@@ -8,9 +8,9 @@ public class JavaNameValidator {
                 && !Character.isDigit(name.charAt(0));
         if (result) {
             for (int index = 1; index < name.length(); index++) {
-                int thisCodeName = name.charAt(index);
-                if (isNotSpecialSymbol(thisCodeName)  && isNotUpperLatinLetter(thisCodeName)
-                        && isNotLowerLatinLetter(thisCodeName) && !Character.isDigit(thisCodeName)) {
+                int code = name.charAt(index);
+                if (isNotSpecialSymbol(code)  && isNotUpperLatinLetter(code)
+                        && isNotLowerLatinLetter(code) && !Character.isDigit(code)) {
                     result = false;
                     break;
                 }
