@@ -2,6 +2,7 @@ package ru.job4j.condition;
 
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
+import static ru.job4j.condition.Max.max;
 
 public class MaxTest {
 
@@ -9,8 +10,7 @@ public class MaxTest {
     public void whenMax1To2Then2() {
         int left = 1;
         int right = 2;
-        Max max = new Max();
-        int results = max.maxTwo(left, right);
+        int results = max(left, right);
         int expected = 2;
         assertThat(results).isEqualTo(expected);
     }
@@ -19,8 +19,7 @@ public class MaxTest {
     public void whenMax3To5Then5() {
         int left = 3;
         int right = 5;
-        Max max = new Max();
-        int results = max.maxTwo(left, right);
+        int results = max(left, right);
         int expected = 5;
         assertThat(results).isEqualTo(expected);
     }
@@ -29,8 +28,7 @@ public class MaxTest {
     public void whenMax4To4Then4() {
         int left = 4;
         int right = 4;
-        Max max = new Max();
-        int results = max.maxTwo(left, right);
+        int results = max(left, right);
         int expected = 4;
         assertThat(results).isEqualTo(expected);
     }
@@ -39,8 +37,7 @@ public class MaxTest {
     public void whenMax9To4Then9() {
         int left = 9;
         int right = 4;
-        Max max = new Max();
-        int results = max.maxTwo(left, right);
+        int results = max(left, right);
         int expected = 9;
         assertThat(results).isEqualTo(expected);
     }
@@ -50,8 +47,7 @@ public class MaxTest {
         int first = 1;
         int second = 4;
         int three = 8;
-        Max max = new Max();
-        int results = max.maxThree(first, second, three);
+        int results = max(first, second, three);
         int expected = 8;
         assertThat(results).isEqualTo(expected);
     }
@@ -62,8 +58,7 @@ public class MaxTest {
         int second = 4;
         int three = 9;
         int four = 7;
-        Max max = new Max();
-        int results = max.maxFour(first, second, three, four);
+        int results = max(first, second, three, four);
         int expected = 9;
         assertThat(results).isEqualTo(expected);
     }
@@ -73,8 +68,7 @@ public class MaxTest {
         int first = 7;
         int second = 4;
         int three = 5;
-        Max max = new Max();
-        int results = max.maxThree(first, second, three);
+        int results = max(first, second, three);
         int expected = 7;
         assertThat(results).isEqualTo(expected);
     }
@@ -85,8 +79,7 @@ public class MaxTest {
         int second = 14;
         int three = 2;
         int four = 4;
-        Max max = new Max();
-        int results = max.maxFour(first, second, three, four);
+        int results = max(first, second, three, four);
         int expected = 14;
         assertThat(results).isEqualTo(expected);
     }
@@ -96,8 +89,7 @@ public class MaxTest {
         int first = 7;
         int second = 4;
         int three = 7;
-        Max max = new Max();
-        int results = max.maxThree(first, second, three);
+        int results = max(first, second, three);
         int expected = 7;
         assertThat(results).isEqualTo(expected);
     }
@@ -108,8 +100,7 @@ public class MaxTest {
         int second = 8;
         int three = 8;
         int four = 4;
-        Max max = new Max();
-        int results = max.maxFour(first, second, three, four);
+        int results = max(first, second, three, four);
         int expected = 8;
         assertThat(results).isEqualTo(expected);
     }
